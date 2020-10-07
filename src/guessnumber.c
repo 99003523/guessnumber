@@ -129,8 +129,4 @@ int numPoints(double timesec)
     {
         return 1;
     }
-    else if(timesec > 10)
-    {
-        return 0;
-    }
 }
