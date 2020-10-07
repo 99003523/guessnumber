@@ -2,10 +2,10 @@
 
 void MainMenu()
 {
-    char str_name[25];
+    char name[25];
     printf("Enter name: ");
-    scanf("%[^\n]", str_name);
-    printf("\nHello %s Welcome to Guessing Game.\n",str_name);
+    scanf("%4s", name);
+    printf("\nHello %s Welcome to Guessing Game.\n",name);
     printf("RULES:\n1. Only 8 chances to guess the randomly generated number.");
     printf("\n2. You can WIN the game when the number guessed is same as the randomly generated number.");
     printf("\n3. Hints will be provided during the PLAY.");
