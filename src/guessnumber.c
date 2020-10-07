@@ -35,11 +35,6 @@ double guessGame( )
     int random = 0;
     int i=0;
     int start = time(0);
-    //printf("Enter the lower limit of the number would you like to guess?\n");
-    //scanf("%d",&lower);
-    //printf("Enter the upper limit of the number would you like to guess?\n");
-    //scanf("%d",&upper);
-   // max= (upper+lower)/2;
     printf("\nWhat maximum number would you like to guess?\n");
     scanf("%d",&max);
     digits = NumDigits(max);
