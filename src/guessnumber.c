@@ -65,7 +65,7 @@ double guessGame( )
     return InScore;
 }
 
-void PrintScore()
+void PrintScore(int Score)
 {
     int Score;
     printf("\nYour current rank is %d.\n", Score);
