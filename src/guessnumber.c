@@ -1,5 +1,5 @@
 #include <guessnumber.h>
-int Score;
+
 void MainMenu()
 {
     char str_name[25];
@@ -61,7 +61,7 @@ double guessGame( )
     int timespent = end-start;
     printf("\nYou guessed correctly with %d tries and %d seconds.\n",i,timespent);
     InScore = timespent/(2*digits);
-    Score = Score + numPoints(InScore);
+    Score += numPoints(InScore);
     return InScore;
 }
 
