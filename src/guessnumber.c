@@ -1,5 +1,5 @@
 #include <guessnumber.h>
-
+int Score;
 void MainMenu()
 {
     char name[25];
