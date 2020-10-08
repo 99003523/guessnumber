@@ -1,4 +1,5 @@
 #include <guessnumber.h>
+int Score;
 void MainMenu()
 {
     char name[25];
@@ -24,8 +25,9 @@ int GetChoice(int min,int max)
     return Choice;
 }
 
-double guessGame(int max)
+double guessGame()
 {
+    int max;
     double InScore;
     int digits;
     int Score;
@@ -60,11 +62,10 @@ double guessGame(int max)
     InScore = timespent/(2*digits);
     Score += numPoints(InScore);
     return InScore;
-
+}
 void PrintScore()
 {
     printf("\nYour current rank is %d.\n", Score);
-}
 }
 
 void Quit()
