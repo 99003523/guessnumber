@@ -25,10 +25,8 @@ int GetChoice(int min,int max)
     return Choice;
 }
 
-double guessGame( )
+double guessGame(int max)
 {
-    //int upper, lower;
-    int max;
     double InScore;
     int digits;
     int Score;
@@ -63,11 +61,11 @@ double guessGame( )
     InScore = timespent/(2*digits);
     Score += numPoints(InScore);
     return InScore;
-}
 
 void PrintScore()
 {
     printf("\nYour current rank is %d.\n", Score);
+}
 }
 
 void Quit()
