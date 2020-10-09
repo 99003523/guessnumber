@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = Guess_My_Number
+PROJECT_NAME = GuessNumber
 
 # Output directory
 BUILD = build
