@@ -2,7 +2,7 @@
 #include <CUnit/CUnit.h>
 
 #include <guessnumber.h>
-#define PROJECT_NAME    "Guess_My_Number"
+#define PROJECT_NAME    "guessnumber"
 
 void test_MainMenu(void);
 void test_GetChoice(void);
