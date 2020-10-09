@@ -2,8 +2,8 @@
 int Score;
 void MainMenu()
 {
-    char name[25];
-    printf("Enter name: ");
+    char name[20];
+    printf("Enter your name:");
     scanf("%4s", name);
     printf("\nHello %s Welcome to Guessing Game.\n",name);
     printf("RULES:\n1. Only 8 chances to guess the randomly generated number.");
@@ -25,12 +25,11 @@ int GetChoice(int min,int max)
     return Choice;
 }
 
-double guessGame()
+double guessGame( )
 {
     int max;
     double InScore;
-    int digits;
-    int Score;
+    int digits,Score;
     int guess = 0;
     int random = 0;
     int i=0;
@@ -63,9 +62,10 @@ double guessGame()
     Score += numPoints(InScore);
     return InScore;
 }
+
 void PrintScore()
 {
-    printf("\nYour current rank is %d.\n", Score);
+    printf("\nYour current rank is %d.\n",Score);
 }
 
 void Quit()
@@ -125,5 +125,9 @@ int numPoints(double timesec)
     else if(timesec <= 10)
     {
         return 1;
+    }
+    else if(timesec > 10)
+    {
+        return 0;
     }
 }
