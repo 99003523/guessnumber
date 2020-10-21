@@ -41,7 +41,7 @@ doc:
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit 
 	./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
@@ -51,4 +51,3 @@ clean:
 # Create new build folder if not present
 $(BUILD):
 	mkdir build
-
