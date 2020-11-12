@@ -1,29 +1,21 @@
-# Name of the project
-PROJECT_NAME = guessnumber
+SRC = unity/unity.c\
+src/projectfirst.c\
+test/test_projectfirst.c\
+main.c
 
-# Output directory
-BUILD = build
+INC = -Iunity\
+-Iinc\
+-Itest
 
-# All source code files
-SRC = project_main.c\
-src/guessnumber.c\
+PROJECT_NAME = projectfirst.out
 
-# All test source files
-TEST_SRC = src/guessnumber.c\
-test/test.c
+$(PROJECT_NAME): $(SRC)
+	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+run:$(PROJECT_NAME)
+	./${PROJECT_NAME}
+doc:
+	make -C documentation
 
-# All include folders with header files
-INC	= -Iinc
-
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
-
-# Document files
-DOCUMENTATION_OUTPUT = documentation/html
-
-# Default target built
-$(PROJECT_NAME):all
-
-# Run the target even if the matching name exists
-.PHONY: run clean test  doc all
+clean:
+	rm -rf $(PROJECT_NAME) documentation/html
