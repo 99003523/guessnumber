@@ -1,4 +1,4 @@
-#include<projectfirst.h>
+#include<guessnumber.h>
 int Score;
 void MainMenu()
 {
