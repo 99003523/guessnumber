@@ -1,5 +1,5 @@
-#include "projectfirst.h"
-#include "test_projectfirst.h"
+#include "guessnumber.h"
+#include "test_guessnumber.h"
 int main()
 {
     int Choice;
