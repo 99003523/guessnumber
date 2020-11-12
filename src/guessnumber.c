@@ -1,17 +1,17 @@
-#include <guessnumber.h>
+#include<projectfirst.h>
 int Score;
 void MainMenu()
 {
     char name[20];
     printf("Enter your name:");
-    scanf("%4s", name);
+    scanf("%s", name);
     printf("\nHello %s Welcome to Guessing Game.\n",name);
     printf("RULES:\n1. Only 8 chances to guess the randomly generated number.");
     printf("\n2. You can WIN the game when the number guessed is same as the randomly generated number.");
     printf("\n3. Hints will be provided during the PLAY.");
     printf("\n\n$$$ Good Luck. Start Guessing $$$");
-    printf("\n\nPick a choice from the following:\n");
-    printf("1.Play Guess My Number Game.\n2.Print Rank.\n3.Quit.\n\n");
+    printf("\n\nPick a game from the following:\n");
+    printf("1.Play Guessing Game.\n2.Print Score.\n3.Quit.\n\n");
 }
 
 int GetChoice(int min,int max)
@@ -20,18 +20,17 @@ int GetChoice(int min,int max)
     while(Choice < min || Choice > max)
     {
         printf("Enter a choice from %d to %d:\n",min,max);
-        scanf("%d",&Choice);
+        scanf("%d", &Choice);
     }
     return Choice;
 }
 
-double guessGame( )
+double guessGame(max,guess)
 {
-    int max;
     double InScore;
-    int digits,Score;
-    int guess = 0;
-    int random = 0;
+    int digits;
+    guess=0;
+    int random=0;
     int i=0;
     int start = time(0);
     printf("\nWhat maximum number would you like to guess?\n");
@@ -46,11 +45,11 @@ double guessGame( )
     {
         if(guess < random)
         {
-            printf("You guess is too low.Guess again.\n");
+            printf("Your guess is too low.Guess again.\n");
         }
         else if(guess > random)
         {
-            printf("Your guess is too high.Guess again\n");
+            printf("Your guess is too high.Guess again.\n");
         }
         scanf("%d",&guess);
         i++;
@@ -65,7 +64,7 @@ double guessGame( )
 
 void PrintScore()
 {
-    printf("\nYour current rank is %d.\n",Score);
+    printf("\nYour current score is %d.\n",Score);
 }
 
 void Quit()
@@ -73,9 +72,10 @@ void Quit()
     printf("\nThank you for playing!\n\n");
     exit(0);
 }
+
 int NumDigits(int number)
 {
-    int count = 0;
+    int count=0;
     while(number!=0)
     {
         number/=10;
@@ -83,7 +83,6 @@ int NumDigits(int number)
     }
     return count;
 }
-
 int numPoints(double timesec)
 {
     if(timesec < 1)
