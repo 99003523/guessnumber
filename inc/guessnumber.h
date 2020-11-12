@@ -1,5 +1,5 @@
-#ifndef PROJECTFIRST_H
-#define PROJECTFIRST_H
+#ifndef GUESSNUMBER_H
+#define GUESSNUMBER_H
 
 #include<stdio.h>
 #include <stdlib.h>
