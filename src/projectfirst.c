@@ -4,7 +4,7 @@ void MainMenu()
 {
     char name[20];
     printf("Enter your name:");
-    scanf("%s", name);
+    scanf("%s",name);
     printf("\nHello %s Welcome to Guessing Game.\n",name);
     printf("RULES:\n1. Only 8 chances to guess the randomly generated number.");
     printf("\n2. You can WIN the game when the number guessed is same as the randomly generated number.");
@@ -25,11 +25,12 @@ int GetChoice(int min,int max)
     return Choice;
 }
 
-double guessGame(max,guess)
+double guessGame()
 {
+    int max;
     double InScore;
     int digits;
-    guess=0;
+    int guess=0;
     int random=0;
     int i=0;
     int start = time(0);
