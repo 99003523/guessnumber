@@ -1,9 +1,5 @@
-#ifndef GUESSNUMBER_H
-#define GUESSNUMBER_H
-
-#include<stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#ifndef PROJECTFIRST_H
+#define PROJECTFIRST_H
 
 void MainMenu();
 int GetChoice(int min,int max);
