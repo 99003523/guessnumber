@@ -7,7 +7,7 @@ INC = -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = projectfirst.out
+PROJECT_NAME = projectfirst.exe
 
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
