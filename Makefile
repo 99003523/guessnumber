@@ -19,3 +19,4 @@ doc:
 
 clean:
 	rm -rf $(PROJECT_NAME) documentation/html
+
