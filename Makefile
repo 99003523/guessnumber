@@ -1,13 +1,13 @@
 SRC = unity/unity.c\
-src/projectfirst.c\
-test/test_projectfirst.c\
+src/guessnumber.c\
+test/test_guessnumber.c\
 main.c
 
 INC = -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = projectfirst.out
+PROJECT_NAME = guessnumber.out
 
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
