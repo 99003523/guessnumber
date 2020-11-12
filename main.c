@@ -1,6 +1,3 @@
-#include<stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "projectfirst.h"
 #include "test_projectfirst.h"
 int main()
