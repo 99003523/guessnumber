@@ -24,5 +24,6 @@
 	  	RUN_TEST(test_GetChoice);
 	  	RUN_TEST(test_guessGame);
 
+	
   		return UNITY_END();
 	}
